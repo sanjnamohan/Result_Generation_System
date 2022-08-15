@@ -1,0 +1,141 @@
+h1 {
+    color: navy;
+    text-align: center;
+}
+h2 {
+    color: grey;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#resulttable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #resulttable td, #resulttable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #resulttable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #resulttable tr:hover {background-color: #ddd;}
+  
+  #resulttable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #1c6bda;
+    color: white;
+  }
+
+  #detailtable {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #detailtable td, #detailtable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #detailtable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #detailtable tr:hover {background-color: #ddd;}
+  
+  #detailtable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: teal;
+    color: white;
+  }
+
+
+
+.button_next {
+    margin: 0;
+    background-color: green;
+    left: 50%;
+    position: absolute;
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+.content {
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 200px 0;
+  }
+
+.resultdisplay {
+    width: 60%;
+    margin: auto;
+    background: white;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.form_body{
+    max-width: 750px;
+    margin: auto;
+    background: white;
+    padding: 200px 0;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #5b7cb5;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #073c96;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgba(39, 108, 213, 0.95);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
